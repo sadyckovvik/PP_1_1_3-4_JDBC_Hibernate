@@ -11,10 +11,10 @@ import java.util.logging.Logger;
 
 public class UserDaoJDBCImpl implements UserDao {
     private static final Logger logger = Logger.getLogger(UserDaoJDBCImpl.class.getName());
+
     public UserDaoJDBCImpl() {
 
     }
-
 
     public void createUsersTable() {
         String sql = "CREATE TABLE IF NOT EXISTS users (Id INT PRIMARY KEY AUTO_INCREMENT, Name VARCHAR(60), LastName VARCHAR(60), Age INT)";
